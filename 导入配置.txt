@@ -1,0 +1,25 @@
+导入时需做以下配置：
+
+1、Build Settings -> Header Search Pahts 配置
+
+	"$(SRCROOT)/JFAnimationDemo/Libs/Protobuf/objectivec"
+	"$(SRCROOT)/JFAnimationDemo/Libs/SSZipArchive"
+
+2、配置以下类MRC支持 -fno-objc-arc
+
+	GPBCodedOutputStream.m
+	GPBCodedInputStream.m
+	GPBUnknownFieldSet.m
+	GPBUtilities.m
+	GPBExtensionInternals.m
+	GPBArray.m
+	GPBRootObject.m
+	GPBExtensionRegistry.m
+	GPBDescriptor.m
+	Struct.pbobjc.m
+	GPBWellKnownTypes.m
+	Svga.pbobjc.m
+	GPBDictionary.m
+	Type.pbobjc.m
+	GPBMessage.m
+	GPBUnknownField.m
